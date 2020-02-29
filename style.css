@@ -209,6 +209,10 @@ body {
     animation: arrows 1s 3s forwards;
 }
 
+.arrow-greyed {
+    color: #C6C6C6 !important;
+}
+
 @keyframes arrows {
     from {
         opacity: 0;
