@@ -48,7 +48,7 @@ let elements = {
         const studiesPos = elements.pages.studies.offsetTop + (window.innerHeight * 0.6);
         const workPos = elements.pages.work.offsetTop + (window.innerHeight * 0.6);
         const cvPos = elements.pages.cv.offsetTop + (window.innerHeight * 0.6);
-        const projectsPos = elements.pages.projects.offsetTop + (window.innerHeight * 0.6);
+        const projectsPos = elements.pages.projects.offsetTop + (window.innerHeight * 0.95);
 
         // const projectsPos = elements.pages.projects.offsetTop + (window.innerHeight * 1.5);
 
