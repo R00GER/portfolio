@@ -21,7 +21,7 @@ body {
     height: 5vh;
     position: fixed;
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
     width: 100%;
     z-index: 1000;
 }
@@ -124,7 +124,7 @@ body {
     animation: pager-links 1s 2s forwards;
 }
 
-#pager_cv {
+#pager_contact {
     animation: pager-links 1s 1.9s forwards;
 }
 
@@ -239,7 +239,7 @@ body {
     color: #1d1d1d;
 }
 
-#page_cv {
+#page_contact {
     background-color: #1d1d1d;
     color: white;
     clip-path: polygon(0% 0%, 50% 10%, 100% 0, 100% 100%, 0 100%);
@@ -295,6 +295,7 @@ body {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    column-gap: 1em;
     font-size: 1.8vw;
     color: white;
     opacity: 0;
@@ -334,12 +335,14 @@ body {
     background-color: #2b2929b3;
     display: inline;
     padding: .1em .3em .1em .3em;
+    white-space: nowrap;
 }
 
 .card-buttons {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 .card-buttons>div {
@@ -365,12 +368,11 @@ body {
 
 .work-in-progress {
     text-align: center;
-    width: 50%;
+    width: 100%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 72px;
+    transform: translateY(-50%);
+    font-size: 6vw;
     text-shadow: 1px 1px .5px rgba(48, 48, 48, 0.6);
 }
 
@@ -382,6 +384,16 @@ body {
         font-size: 12vw;
     }
     .social {
+        font-size: 8vw;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .card-text {
+        font-size: 3.3vw;
+    }
+    .work-in-progress {
         font-size: 8vw;
     }
 }
